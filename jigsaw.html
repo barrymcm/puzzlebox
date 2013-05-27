@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Puzzle</title>
+<link href="css/styles.css" rel="stylesheet" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/script.js"></script>
+</head>
+<body>
+	<div id="canvas">
+		<div id="header">
+			<div id="navigation">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+				<li><a href="jigsaw.html">Jigsaw</a></li>
+				<li><a href="animals.html">Animals</a></li>
+				<li><a href="letters.html">Letters</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			</div>
+		<!-- end of navigation -->
+			<div id="banner">
+				<h1>Jigsaw Puzzle</h1>
+				<div id="countdown"></div>				
+			</div>
+		<!-- end of banner -->
+		</div>
+		<!-- end of header -->
+		<div id="container">
+		  <button id="question" onClick="countDown();">Start</button>
+			<button id="question" onClick="resetGame();">Reset</button>
+			<p>
+			Drag the pieces to make the jigsaw
+			</p>
+			<div id="wellDone"></div>
+			
+			<div id="timeout">Time up, try again!</div>
+			<div id="puzzle">
+			<div>
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of canvas -->
+</body>	
+</html>

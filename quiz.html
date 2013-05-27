@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>quiz</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="jquery/script.js"></script>
+  <link href="css/styles.css" rel="stylesheet" />	
+</head>
+
+<body>
+  <div id="canvas">
+		<div id="header">
+			<div id="navigation">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+				<li><a href="jigsaw.html">Jigsaw</a></li>
+				<li><a href="animals.html">Animals</a></li>
+				<li><a href="letters.html">Letters</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			</div>
+		<!-- end of navigation -->
+			<div id="banner">
+				<h1>Quiz</h1>	
+				<div id="score"></div>		
+			</div>
+		<!-- end of banner -->
+		</div>
+		<!-- end of header -->
+		<div id="container">
+		  <h3>Try to answer the questions before the timer runs out</h3>
+		  <div id="quiz_timer"></div>
+			<button id="question" onClick="display_question();" >Click Start</button>
+			<ul id="answers">
+			</ul>
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of canvas -->
+
+
+</body>
+</html>

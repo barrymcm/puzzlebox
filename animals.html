@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Drag and Drop</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/drag_and_drop.js"></script>
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="canvas">
+		<div id="header">
+			<div id="navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="jigsaw.html">Jigsaw</a></li>
+				<li><a href="animals.html">Animals</a></li>
+				<li><a href="letters.html">Letters</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			</div>
+		<!-- end of navigation -->
+			<div id="banner">
+				<h1>Drag and Drop the Animals</h1>				
+			</div>
+		<!-- end of banner -->
+		</div>
+		<!-- end of header -->
+		<div id="container">
+		  <div id="restart"><a href="animals.html">Restart</a></div>
+			<p>Drag the animal to its correct place</p>
+			<p id="wellDone">Well Done!!<p>
+			<div class="score">Score:</div>
+			<div id="objects">
+				<div id="dog" class="object"><img src="images/Cartoon_Dog.png" width="145" height="150" alt="Bird"></div>
+				<div id="bird" class="object"><img src="images/bird.jpeg" width="145" height="150" alt="Cartoon Dog"></div>
+				<div id="elephant" class="object"><img src="images/elephant.jpeg" width="145" height="150" alt="Elephant"></div>
+			</div>
+			<div id="slots">
+				<div id="elephant_slot" class="slot">Elephant</div>
+				<div id="dog_slot" class="slot">Dog</div>
+				<div id="bird_slot" class="slot">Bird</div>
+			<div>
+			<ul id="answers"></ul>
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of canvas -->
+</body>	
+</html>

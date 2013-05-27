@@ -1,0 +1,342 @@
+body {
+	width: 900px;
+	background-color: green;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*===== ID's ===== */
+
+#canvas{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: auto;
+	float: left;
+	background-color: white;
+	height: auto;
+	padding: 20px;
+}
+#container{
+	width:700px;
+	float: left;
+	background: yellow;
+	margin-left: 75px;
+	margin-right: 75px;
+	height: auto;
+	padding: 20px;
+}
+#header{
+	width:700px;
+	margin: 50px 0;
+	float: left;
+	background: blue;
+	margin-left: 75px;
+	margin-right:75px;
+	height: auto;
+	padding: 20px;
+}
+#header h1{
+    color: blue;
+}
+#banner{
+	width: 350px;
+	height: 175px;
+	float: right;
+	margin: 12px 25px;
+	background-color: purple; 
+	background-color: purple;
+	border: 3px solid black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#navigation{
+	width: 175px;
+	height: auto;
+	float: left;
+}
+#navigation ul li:hover{
+	background-color: red;
+}
+#banner h1{
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+}
+#scores{
+	width: 350px;
+	height: auto;
+	background-color: #00dc94;
+	border: 3px solid black;
+	float: right;
+	color: yellow;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#container #scores ul li{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	width: 150px;
+	height: 50px;
+	font-size: 1.5em;
+}
+#score{
+	font-size: 1.5em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: center;
+}
+#new_record{
+	width: auto;
+	height: 50px;
+	background-color: #e988a1;
+	font-size: 2em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	float: right;
+	margin-right: 165px;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+/* Items that the user interacts with */
+
+/* Draggable */
+#objects{
+	margin: 10px 50px;
+}
+#puzzle{
+	margin: 10px 50px;
+	float: left;
+	height: auto;
+}
+#restart{
+	background-color: green;
+	height: 50px;
+	width: 150px;
+}
+#wellDone{
+	margin: 0px auto;
+	background-color: red;
+	height: 150px;
+	width: 350px;
+	color: #fff;
+}
+/* Droppable */
+#slots{
+	margin: 10px 50px
+}
+#countdown{
+	height: 75px;
+	width: auto;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 2em;
+	text-align: center;
+		
+}
+#quiz_timer{
+	float: right;
+	height: 75px;
+	width: 75px;
+	color: yellow;
+	font-size: 3em;
+	font-weight: bold;
+	background: #8250e5;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	border: 3px solid black;
+	text-align: center;
+}
+#timeout{
+	height: 75px;
+	width: auto;
+	color: red;
+	font-size: 3em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	text-align: center;	
+}
+#question{
+	height: auto;
+	width: auto;
+	size: 8em;
+	background: #0f8738;
+   cursor: pointer;
+	font-size: 2.5em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	border: 3px solid black;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 60px;
+}
+#submit input {
+	height: 50px;
+	background-color: ;
+}
+#container li{
+   background: #8250e5;
+   cursor: pointer;
+	font-size: 2.5em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	border: 3px solid black;
+	color: white;
+	font-weight: border-left;
+	display: inline-block;
+	 
+}
+#container li:hover{
+    background: red;
+}
+#elephant_slot{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	
+}
+#dog_slot{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	
+}
+#bird_slot{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	
+}
+/*===== Classes ===== */
+.object{
+	width:145px;
+	height: 150px;
+	margin: 25px;
+	background-color: red;
+	float:left;
+	border: 2px solid yellow;
+}
+.altobject{
+	width:145px;
+	height: 150px;
+	margin: 25px;
+	background-color: green;
+	float:left;
+	border: 2px solid black;
+}
+.jigsaw{
+	width:145px;
+	height: 150px;
+	background-color: #fff;
+	float:left;
+	margin: 2px;
+}
+.slot{
+	width:145px;
+	height: 150px;
+	margin: 25px;
+	background-color: red;
+	float:left;
+	border: 2px solid blue;
+}
+.altslot{
+	width:145px;
+	height: 150px;
+	margin: 25px;
+	background-color: green;
+	float:left;
+	border: 2px solid red;
+}
+.pick{
+	width:145px;
+	height: 150px;
+	margin: 25px;
+	background-color: green;
+	float:left;
+	border: 2px solid yellow;
+}
+.drop{
+	width:145px;
+	height: 150px;
+	margin: 25px;
+	background-color: blue;
+	float:left;
+	border: 2px solid blue;
+}
+.handle{
+	cursor: move;
+}
+.score {
+	background-color: red;
+	color: white;
+	width: 175px;
+	margin: 12px 20px;
+	text-align: center;
+	border: 5px;
+	border-color: red;
+	display: inline-block;
+}
+.names li{
+	margin-bottom: 10px;
+}
+.names li label{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	list-style-type: none;
+	font-size: 45px;
+	width: 350px;
+	margin: 12px 20px;
+	text-align: left;
+	float: left;
+}
+
+/* =====  Descendent Selectors  =====*/
+button{
+	background-color: #8250e5;
+}
+ul li{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	list-style-type: none;
+	line-height: 2em;
+	background-color: purple;
+	width: 175px;
+	margin: 12px 20px;
+	text-align: center;
+	border: 3px solid black;
+	display: block;
+	list-style: none;
+}
+h1{
+    color: red;
+}
+a{
+	font-size: 1.5em;
+	color: white;
+}
+p{
+	font-family: arial;
+	font-size: 1.5em;
+	text-align: center;
+}
+h3{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.5em;
+	color: red;
+	background-color: white;
+	padding: 5px;
+}
+input{
+	width: 250px;
+	height: 60px;
+	margin-top: 15px;
+	margin-right: 10px;
+	font-size: 1em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+.submit{
+	width: 250px;
+	height: 60px;
+	margin-top: 15px;
+	margin-right: 10px;
+	font-size: 1em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+input:hover{
+	background-color: #caf9da;
+}
+

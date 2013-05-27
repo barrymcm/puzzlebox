@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>HTML</title>
+<link href="css/styles.css" rel="stylesheet" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/ajax_script.js"></script>
+</head>
+<body>
+	<div id="canvas">
+		<div id="header">
+			<div id="navigation">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+				<li><a href="jigsaw.html">Jigsaw</a></li>
+				<li><a href="animals.html">Animals</a></li>
+				<li><a href="letters.html">Letters</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			</div>
+		<!-- end of navigation -->
+			<div id="banner">
+				<h1>Home</h1>				
+			</div>
+		<!-- end of banner -->
+		</div>
+		<!-- end of header -->
+		<div id="container">
+		  
+		  <h3>Type your name and your age</h3>
+		  <div id="new_record"></div>
+      <form action="create_XML.php" method="post" >
+        <ol class="names">
+        <li>
+          <label for="">First Name</label>
+          <input id="first_name" type="text" name="first_name" value="" />
+        </li>
+        <li>
+          <label for="">Last Name</label>
+          <input id="last_name" type="text" name="last_name" value="" />
+        </li>
+        <li>
+          <label for="">Age</label>
+          <input id="age" type="text" name="age" value="" />
+        </li>
+        <input class="submit" type="submit" name="submit" value="Send" />
+        </ol>
+      </form>
+      <button id="question">Click here to see Names</button>
+      <div id="scores"><ul></ul></div>
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of canvas -->
+</body>	
+</html>
